@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrés Montoro - Ingeniero de IT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-links">
+        <a href="#hero" class="active">Inicio</a>
+        <a href="#about">Sobre Mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" class="container">
+      <div class="hero-content animate-slideInLeft">
+        <h1>Hola, soy <span class="text-white">Andrés Montoro</span></h1>
+        <p>
+          Soy <span class="font-semibold text-blue">Ingeniero Informático</span> con pasión por diseñar y 
+          aplicar soluciones innovadoras en el ámbito de las tecnologías de la información. 
+          Actualmente trabajo en <span class="font-semibold text-blue">Bodegas Fundador</span>, 
+          donde enfoco mi labor en la mejora continua de procesos y sistemas IT.
+        </p>
+        <p>
+          También uso el desarrollo como una herramienta clave para resolver retos tecnológicos, 
+          optimizar flujos de trabajo y ofrecer soluciones adaptadas a las necesidades del negocio.
+        </p>
+      </div>
+      <div class="hero-image animate-fadeInRight">
+        <img src="../public/img/me.jpeg" alt="Tu foto de perfil">
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="about-content animate-fadeInLeft">
+        <h2>Sobre Mí</h2>
+        <p>
+          Desde pequeño sentí curiosidad por entender cómo funcionan las cosas, desmontando 
+          aparatos y creando soluciones caseras para problemas cotidianos. Esa inquietud 
+          despertó mi interés por la tecnología y me impulsó a aprender de forma autodidacta 
+          en distintos ámbitos, desde tocar el piano hasta profundizar en el mundo de la informática.
+        </p>
+        <p>
+          Hoy canalizo esa pasión resolviendo problemas mediante soluciones tecnológicas, especialmente 
+          en el ámbito IT, utilizando el desarrollo como una herramienta para optimizar procesos 
+          y mejorar sistemas. Mi objetivo es seguir creciendo, tanto profesional como personalmente, 
+          y sentirme orgulloso del camino recorrido.
+        </p>
+        <p>
+          Mirando hacia el futuro, mi objetivo es poder mirar atrás y sentirme realizado con 
+          la evolución que haya tenido tanto como profesional como persona.
+        </p>
+      </div>
+      <div class="about-image animate-fadeInRight">
+        <img src="../public/img/ingenieria.jpg" alt="Imagen de ingeniería">
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2 class="animate-fadeInDown">Mis Proyectos Recientes</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>AutoCluedo</h3>
+          <div class="project-description">
+            <p>
+              Aplicación web interactiva que optimiza el movimiento en el tablero de Cluedo 
+              mediante algoritmos de búsqueda, reduciendo la duración de las partidas hasta 
+              en un 50%.
+            </p>
+            <p>
+              <span class="font-semibold">Tecnologías usadas: </span>Spring Boot, Vaadin.
+            </p>
+          </div>
+          <button class="toggle-details-btn">Ver Detalles</button>
+          <div class="project-details">
+            <p>
+              Diseñé e implementé una herramienta web como complemento al juego de mesa Cluedo,
+              enfocada en mejorar la dinámica y fluidez del juego. 
+            </p>
+            <p>
+              Detecté que las partidas se extendían innecesariamente debido al tiempo que los 
+              jugadores dedicaban a calcular rutas posibles. Como solución, desarrollé 
+              una aplicación que replica digitalmente el tablero del juego y permite al 
+              usuario seleccionar su posición actual y el número de movimientos disponibles. 
+            </p>
+            <p>
+              Utilizando algoritmos de búsqueda, la aplicación genera y visualiza en tiempo real 
+              todos los caminos válidos desde esa posición, facilitando la toma de decisiones y 
+              acelerando significativamente el ritmo del juego.
+            </p>
+            <div class="project-links">
+              <a href="https://www.linkedin.com/posts/andresmontoro_cuando-el-juego-se-vuelve-una-idea-activity-7279109995659485185-ggjm?utm_source=share&utm_medium=member_android&rcm=ACoAAEBbuzAB9dLChAPxMS3e1CqfcZhFDAfTUWQ" target="_blank" rel="noopener noreferrer">
+                <img src="../public/icon/link.svg" alt="Link Icon" width="18" height="18" />
+                Ir al Proyecto
+              </a>
+              <a href="https://github.com/AndresMontoro/AutoCluedo" target="_blank" rel="noopener noreferrer" class="github">
+                <img src="../public/icon/github.svg" alt="Github Icon" width="18" height="18" />
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <h3>CofradeGPT</h3>
+          <div class="project-description">
+            <p>
+              Aplicación web basada en inteligencia artificial que actúa como sistema RAG 
+              (Retrieval-Augmented Generation), capaz de responder consultas complejas sobre 
+              la Semana Santa de Jerez con precisión y naturalidad.
+            </p>
+            <p>
+              <span class="font-semibold">Tecnologías usadas: </span>Spring Boot, Angular, Kafka, Docker, Keycloak (Oauth2), PostgreSQL.
+            </p>
+          </div>
+          <button class="toggle-details-btn">Ver Detalles</button>
+          <div class="project-details">
+            <p>
+              Desarrollé una herramienta que interactúa con una API personalizada que contiene datos estructurados sobre 
+              hermandades, bandas, contratos, itinerarios y eventos. Gracias a su arquitectura basada en 
+              RAG, CofradeGPT no solo busca y extrae información relevante, sino que también razona sobre 
+              ella para generar respuestas en lenguaje natural.
+            </p>
+            <p>
+              Entre sus funcionalidades destacan la creación de horarios personalizados según las 
+              preferencias del usuario, recomendaciones de recorridos, y la capacidad de responder 
+              a curiosidades históricas o logísticas del evento.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/AndresMontoro/CofradeGPT" target="_blank" rel="noopener noreferrer" class="github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3.5-1 3.5-4 0-5s-3.5-3-3.5-4V3.5a1.5 1.5 0 0 0-3 0V7c0 1-3.5 1-3.5 4s0 4 3.5 5c-.7 1-1 2.2-1 3.5V22"></path></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Davinci-Score</h3>
+          <div class="project-description">
+            <p>
+              Estoy desarrollando una herramienta automatizada para la corrección de proyectos 
+              universitarios de software. Esta solución integra consultas a CodeQL, la API de 
+              GitHub y la de SonarCloud para evaluar el código de los estudiantes de manera eficiente 
+              y objetiva.
+            </p>
+            <p>
+              <span class="font-semibold">Tecnologías usadas: </span>Spring Boot, Vaadin, Keycloak (OAuth2) y PostgreSQL.
+            </p>
+          </div>
+          <button class="toggle-details-btn">Ver Detalles</button>
+          <div class="project-details">
+            <p>
+              El proyecto permite a los docentes crear asignaturas privadas y definir criterios de 
+              evaluación que se traducen automáticamente en consultas a CodeQL, GitHub y SonarCloud. 
+              Estos criterios se vinculan a evidencias concretas que pueden observarse en el código 
+              de los estudiantes.
+            </p>
+            <p>
+              Además, se utiliza inteligencia artificial (RAG) para generar estas consultas y sugerir 
+              evidencias relevantes. La herramienta muestra enlaces directos al código donde se cumplen 
+              los criterios o resúmenes de los resultados, facilitando una corrección rápida y sin 
+              necesidad de revisar manualmente todo el proyecto.
+            </p>        
+            <div class="project-links">
+              <a href="https://github.com/tu-usuario/fitness-app" target="_blank" rel="noopener noreferrer" class="github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3.5-1 3.5-4 0-5s-3.5-3-3.5-4V3.5a1.5 1.5 0 0 0-3 0V7c0 1-3.5 1-3.5 4s0 4 3.5 5c-.7 1-1 2.2-1 3.5V22"></path></svg>
+                Aún no disponible...
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>ISO 27000</h3>
+          <div class="project-description">
+            <p>
+              Estoy trabajando en la implementación del sistema de gestión de seguridad de la información (SGSI) 
+              basado en la norma ISO/IEC 27000, con el objetivo de fortalecer la postura de ciberseguridad de 
+              la organización mediante un enfoque sistemático y documentado.
+            </p>
+            <p>
+              <span class="font-semibold">Tecnologías usadas: </span>CertTool (Gestor de Documentación).
+            </p>
+          </div>
+          <button class="toggle-details-btn">Ver Detalles</button>
+          <div class="project-details">
+            <p>
+              La implementación parte de un análisis de riesgos en el que se identifican activos críticos, 
+              amenazas, vulnerabilidades y el impacto potencial en la organización. A partir de este 
+              análisis se están definiendo e implementando controles de ciberseguridad alineados 
+              con los requisitos de la norma.
+            </p>
+            <p>
+              Además, se están desarrollando políticas y procedimientos internos que abarcan diferentes 
+              áreas y departamentos, asegurando una coordinación interdepartamental efectiva. También 
+              se están realizando análisis de vulnerabilidades de forma periódica para detectar y 
+              mitigar posibles debilidades técnicas. Todo esto contribuye a establecer un entorno 
+              seguro, controlado y alineado con las buenas prácticas internacionales en gestión de 
+              la seguridad de la información.
+            </p>        
+            <div class="project-links">
+              <a href="https://github.com/tu-usuario/fitness-app" target="_blank" rel="noopener noreferrer" class="github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3.5-1 3.5-4 0-5s-3.5-3-3.5-4V3.5a1.5 1.5 0 0 0-3 0V7c0 1-3.5 1-3.5 4s0 4 3.5 5c-.7 1-1 2.2-1 3.5V22"></path></svg>
+                Aún no disponible...
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Portal IT</h3>
+          <div class="project-description">
+            <p>
+              Estoy desarrollando un portal de IT interno para la organización, diseñado para centralizar 
+              y gestionar las solicitudes que otros departamentos realizan al área de tecnología. El 
+              sistema busca mejorar la trazabilidad, eficiencia y cumplimiento de los procedimientos 
+              establecidos en la gestión de servicios IT.
+            </p>
+            <p>
+              <span class="font-semibold">Tecnologías usadas: </span>Spring Boot y Angular.
+            </p>
+          </div>
+          <button class="toggle-details-btn">Ver Detalles</button>
+          <div class="project-details">
+            <p>
+              El portal cuenta con dos módulos principales: un frontoffice, donde los distintos 
+              departamentos pueden enviar solicitudes al equipo de IT de forma estructurada y conforme 
+              a los procesos definidos, y un backoffice, que permite al equipo IT gestionar estos 
+              registros mediante filtros, búsquedas avanzadas y paneles de control.
+            </p>
+            <p>
+              Desde el backoffice también se pueden generar informes que facilitan la supervisión 
+              interna y la trazabilidad de las acciones realizadas, permitiendo demostrar a 
+              auditores el cumplimiento de políticas y procedimientos. La solución no solo mejora 
+              la operativa diaria, sino que también refuerza el control documental y el alineamiento 
+              con buenas prácticas de gestión de servicios TI.
+            </p>        
+            <div class="project-links">
+              <a href="https://github.com/tu-usuario/fitness-app" target="_blank" rel="noopener noreferrer" class="github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3.5-1 3.5-4 0-5s-3.5-3-3.5-4V3.5a1.5 1.5 0 0 0-3 0V7c0 1-3.5 1-3.5 4s0 4 3.5 5c-.7 1-1 2.2-1 3.5V22"></path></svg>
+                Aún no disponible...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 class="animate-fadeInUp">¡Hablemos!</h2>
+      <p>
+        Si estás interesado en mi perfil, tienes alguna pregunta o simplemente quieres saludar, no dudes en contactarme.
+      </p>
+      <p class="contact-info animate-zoomIn">
+        <span>Email:</span> montorovenegasandres@gmail.com
+      </p>
+      <p>
+        Estoy abierto a nuevas oportunidades y colaboraciones.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
