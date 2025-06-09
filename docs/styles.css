@@ -394,6 +394,18 @@ p {
 }
 
 @media (max-width: 768px) {
+  .animate-slideInLeft,
+  .animate-fadeInRight,
+  .animate-fadeIn, /* Añadido para deshabilitar fadeIn */
+  .animate-fadeInDown, /* Añadido para deshabilitar fadeInDown */
+  .animate-fadeInUp, /* Añadido para deshabilitar fadeInUp */
+  .animate-zoomIn /* Añadido para deshabilitar zoomIn */
+   {
+    animation: none !important; /* Desactiva la animación */
+    transform: none !important; /* Resetea cualquier transformación */
+    opacity: 1 !important; /* Asegura la visibilidad inmediata */
+  }
+
   h1 {
     font-size: 2rem; /* Título principal más pequeño */
   }
