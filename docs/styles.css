@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1.5rem; /* Ajusta el padding para móviles */
 }
@@ -203,7 +203,7 @@ p {
 /* Projects Section */
 #projects .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
   gap: 2.5rem;
   margin-top: 3rem;
 }
