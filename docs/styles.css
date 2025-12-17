@@ -382,7 +382,7 @@ p {
 .animate-fadeInRight { animation: fadeInRight 1s ease-out forwards; }
 .animate-zoomIn { animation: zoomIn 0.6s ease-out forwards; }
 
-/* Carrusel de Skills */
+/* Habilidades */
 .skills-section {
   margin: 0 auto;
 }
@@ -393,41 +393,18 @@ p {
   font-size: 1.1rem;
 }
 
-/* Contenedor del carrusel */
 .carousel-container {
   position: relative;
   overflow: hidden;
   padding: 40px 0;
-  width: 1000px;
+  width: 90%;
+  overflow: hidden;
 }
 
-/* Máscara de desvanecimiento en los bordes */
-.carousel-container::before,
-.carousel-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 150px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.carousel-container::before {
-  left: 0;
-  /* background: linear-gradient(to right, #0a0e27, transparent); */
-}
-
-.carousel-container::after {
-  right: 0;
-  /* background: linear-gradient(to left, #0a0e27, transparent); */
-}
-
-/* Track que contiene las habilidades */
 .skills-track {
   display: flex;
   gap: 40px;
-  animation: scroll 30s linear infinite;
+  animation: scroll 10s linear infinite;
   width: fit-content;
 }
 
@@ -435,7 +412,6 @@ p {
   animation-play-state: paused;
 }
 
-/* Card individual de habilidad */
 .skill-card {
   flex-shrink: 0;
   width: 160px;
@@ -460,7 +436,6 @@ p {
   box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
 }
 
-/* Logo de la habilidad */
 .skill-logo {
   width: 80px;
   height: 80px;
@@ -475,7 +450,6 @@ p {
   transform: scale(1.1);
 }
 
-/* Nombre de la habilidad */
 .skill-name {
   font-size: 1rem;
   font-weight: 600;
@@ -499,7 +473,6 @@ p {
   }
 }
 
-/* Controles opcionales */
 .carousel-controls {
   display: flex;
   justify-content: center;
@@ -533,31 +506,6 @@ p {
   height: 16px;
   fill: currentColor;
 }
-
-/* Responsive */
-/* METER RESPONSIVE CON EL RESTO */
-/* @media (max-width: 768px) {
-  .skills-section h2 {
-    font-size: 2rem;
-  }
-
-  .skill-card {
-    width: 140px;
-    height: 160px;
-  }
-
-  .skill-logo {
-    width: 60px;
-    height: 60px;
-    font-size: 2.5rem;
-  }
-
-  .carousel-container::before,
-  .carousel-container::after {
-    width: 80px;
-  }
-} */
-
 
 /* Media Queries para responsividad */
 @media (max-width: 1024px) {
