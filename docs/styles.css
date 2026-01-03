@@ -404,7 +404,7 @@ p {
 .skills-track {
   display: flex;
   gap: 40px;
-  animation: scroll 10s linear infinite;
+  animation: scroll 16s linear infinite;
   width: fit-content;
 }
 
