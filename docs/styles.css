@@ -629,6 +629,10 @@ p {
     gap: 2.5rem;
   }
 
+  .carousel-container {
+    width: 95%;
+  }
+
   #hero {
     padding-top: 1.5rem;
   }
