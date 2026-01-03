@@ -3,8 +3,8 @@ const pauseBtn = document.getElementById('pauseBtn');
 const speedBtn = document.getElementById('speedBtn');
 
 let isPaused = false;
-let currentSpeed = 30; // segundos
-const speeds = [30, 20, 15, 40]; // diferentes velocidades
+let currentSpeed = 10; // segundos
+const speeds = [5, 3, 15, 20]; // diferentes velocidades
 let speedIndex = 0;
 
 // Pausar/Reanudar
