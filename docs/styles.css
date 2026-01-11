@@ -101,6 +101,7 @@ section {
   padding: 1rem 0;  
   min-height: calc(100vh - var(--navbar-height)); /* Ajusta para que ocupe casi toda la altura de la ventana */
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -324,20 +325,20 @@ p {
 /* Contact Section */
 #contact .contact-info {
   background-color: var(--color-medium-blue);
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   font-size: 1.5rem; /* 24px */
   font-weight: 600;
+  text-decoration: none;
   color: var(--color-text-white);
   /* margin-top: 2rem; */
-  display: inline-block; /* Para que el padding y shadow se apliquen bien */
-  transform: scale(1);
+  /* display: inline-block; */
   transition: transform 0.3s ease;
 }
 
 #contact .contact-info:hover {
-  transform: scale(1.03);
+  transform: translateY(-1px);
 }
 
 #contact .contact-info span {
